@@ -14,7 +14,10 @@
     color: white;
     border-radius: 10px;
     grid-column: 1/span 2;
-    
+    position: relative;
+    background-image:url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 85% 0%;
 }
 .area2{
     background-color: hsl(217, 19%, 35%);
@@ -51,6 +54,7 @@ body {
 .card {
     padding: 30px;
     overflow: scroll;
+    z-index: 1;
 }
 .card::-webkit-scrollbar{
     display: none;
@@ -77,6 +81,17 @@ img{
    position: absolute;
    right: 45%;
 }
+@media(max-width: 608px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 1;
+    }
+    .container > .card {
+        flex: 1 1;
+    } 
+}
 p{
     color: hsl(0, 0%, 81%);
 }
@@ -85,4 +100,10 @@ p{
     gap: 30px;
     align-items: center;
     line-height: .5rem;
+}
+.quote{
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    z-index: 0;
 }
