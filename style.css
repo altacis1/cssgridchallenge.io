@@ -26,13 +26,13 @@
     grid-column: 3;
 }
 .area3{
-    background-color: hsl(210, 46%, 95%);
+    background-color: hsl(0, 0%, 81%);
     border-radius: 10px;
     grid-column: 4;
     grid-row: 1/ span 2;   
 }
 .area4{
-    background-color: hsl(210, 46%, 95%);
+    background-color: hsl(0, 0%, 81%);
     border-radius: 10px;
     grid-row: 2;
 }
@@ -46,6 +46,8 @@ body::-webkit-scrollbar{
     display: none;
 }
 body {
+    display: grid;
+    place-items: center;
     font-size: 13px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 500, 600;
