@@ -7,7 +7,8 @@
     /* grid-template-areas: 
         "card1 card1 card2 card 3"
         "card4 card5 card5 card3"; */
-        height: 10px;
+        height: auto;
+        max-width: 1440px;
 }
 .area1{
     background-color: hsl(263, 55%, 52%);
@@ -26,13 +27,13 @@
     grid-column: 3;
 }
 .area3{
-    background-color: hsl(0, 0%, 81%);
+    background-color: hsl(210, 46%, 95%);
     border-radius: 10px;
     grid-column: 4;
     grid-row: 1/ span 2;   
 }
 .area4{
-    background-color: hsl(0, 0%, 81%);
+    background-color: hsl(210, 46%, 95%);
     border-radius: 10px;
     grid-row: 2;
 }
@@ -46,12 +47,18 @@ body::-webkit-scrollbar{
     display: none;
 }
 body {
-    display: grid;
-    place-items: center;
     font-size: 13px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 500, 600;
     background-color: hsl(0, 0%, 81%);
+
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 .card {
     padding: 30px;
